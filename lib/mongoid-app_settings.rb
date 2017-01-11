@@ -20,6 +20,7 @@ module Mongoid
     end
 
     module ClassMethods
+      delegate :save, to: :record
       # Defines a setting. Options can include:
       #
       # * default -- Specify a default value
